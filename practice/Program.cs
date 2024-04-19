@@ -6,6 +6,13 @@ using System.Runtime.CompilerServices;
 
 //DateTime date = new DateTime();
 double CurrentBalance = 100000;
+
+DateTime currenttime = DateTime.Now;
+string time = currenttime.ToString("t");
+string date = currenttime.ToString("d");
+
+
+Console.WriteLine(currenttime);
 string CashWithdraw = "Cash Withdraw";
 string CashDeposit = "Cash Deposit";
 Console.WriteLine("Welcome User! \n");
@@ -50,8 +57,8 @@ while (true)
                 if (CurrentBalance > 20000)
                 {
                     CurrentBalance = CurrentBalance - 20000;
-
-                    list.Add($"{CashWithdraw} -20000");
+                    
+                    list.Add($"{date} {time}{CashWithdraw} -20000");
                     @string = list.ToArray();
                     Console.WriteLine($"Your Current Balance is {CurrentBalance}");
                 }
@@ -66,7 +73,7 @@ while (true)
                 if (CurrentBalance > 15000)
                 {
                     CurrentBalance = CurrentBalance - 15000;
-                    list.Add($"{CashWithdraw} -15000");
+                    list.Add($"{date} {time}{CashWithdraw} -15000");
                     @string = list.ToArray();
                     Console.WriteLine($"Your Current Balance is {CurrentBalance}");
                 }
@@ -80,7 +87,7 @@ while (true)
                 if (CurrentBalance > 25000)
                 {
                     CurrentBalance = CurrentBalance - 25000;
-                    list.Add($"{CashWithdraw} -25000");
+                    list.Add($"{date} {time}{CashWithdraw} -25000");
                     @string = list.ToArray();
 
                     Console.WriteLine($"Your Current Balance is {CurrentBalance}");
@@ -99,7 +106,7 @@ while (true)
                 {
                     CurrentBalance = CurrentBalance - randomAmount;
 
-                    list.Add(Convert.ToString($"{CashWithdraw} {-randomAmount}"));
+                    list.Add(Convert.ToString($"{date} {time} {CashWithdraw} {-randomAmount}"));
                     @string = list.ToArray();
 
                     Console.WriteLine($"Your Current Balance is {CurrentBalance}");
@@ -165,7 +172,7 @@ while (true)
 
             Console.WriteLine($"Your Current Balance is {CurrentBalance}");
 
-            list.Add(($"{CashDeposit} {Deposit}"));
+            list.Add(($"{date} {time} {CashDeposit} {Deposit}"));
             @string = list.ToArray();
             Console.WriteLine($"You Want To Desposit More Amount ?? yes or no ");
             string? DepositMAmt = Console.ReadLine();

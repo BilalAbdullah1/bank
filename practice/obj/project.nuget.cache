@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RpSIKbcDwbI90O579I9Y6OYtvAxd2GMjwbog8j2VmvGXEbotIHtsv/AzCrLdXPh6Utx2vmerwB3PXB1YZwdHog==",
+  "dgSpecHash": "OKB3Hm33xt8LN9RwRaiQFU6cJTUrh5VDIzQDpbTwfl7UkzODzmh6nDtxuugBXmUvsa4E1YRKdPzl/HvZ7OxTpw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bilal.zaheer\\Downloads\\bank-main\\bank-main\\practice\\practice.csproj",
+  "projectFilePath": "C:\\Users\\ADV\\source\\repos\\practice\\practice\\practice.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1803",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://137.59.226.222:8023/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
-    }
-  ]
+  "logs": []
 }
